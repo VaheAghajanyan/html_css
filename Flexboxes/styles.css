@@ -1,0 +1,35 @@
+* {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: gray;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 0 200px;
+}
+
+.item-1 {
+    flex-shrink: 0;
+}
+
+.item-2 {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.item-3 {
+    flex-grow: 2;
+    flex-basis: 0;
+}
